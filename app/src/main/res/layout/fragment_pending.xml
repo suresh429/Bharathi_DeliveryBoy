@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:background="#FDFDFD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.PendingFragment">
+<androidx.core.widget.NestedScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/pd2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="13dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gilroybold"
+            android:text="Hello, Anurag"
+            android:textColor="@color/color_black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:textSize="18sp"
+            android:fontFamily="@font/gilroymedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="13dp"
+            android:text="here are your deliveries" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/rvOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_orderlist" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+        <ProgressBar
+            android:id="@+id/pd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:visibility="gone"
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <include
+                layout="@layout/shimmercard"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp" />
+
+            <include
+                layout="@layout/shimmercard"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <include
+
+            layout="@layout/shimmercard"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="20dp" />
+
+        <include
+            layout="@layout/shimmercard"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="25dp" />
+
+        <include
+            layout="@layout/shimmercard"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="25dp" />
+
+        <include
+            layout="@layout/shimmercard"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+</com.facebook.shimmer.ShimmerFrameLayout>
+        <ProgressBar
+            android:id="@+id/pd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/color_green"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/lyt404"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/color_white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/nodata" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gilroymedium"
+                android:gravity="bottom"
+                android:scrollbarSize="22dp"
+                android:text="No Data Found"
+                android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

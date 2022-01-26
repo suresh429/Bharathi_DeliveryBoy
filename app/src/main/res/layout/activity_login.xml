@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".activites.LoginActivity">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="190dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/splash_tomato" />
+
+        <ImageView
+            android:id="@+id/tvvegi"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/captain_logo" />
+
+        <TextView
+            android:id="@+id/tvextra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvvegi"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/gilroymedium"
+            android:text="Log in to continue"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_below="@+id/tvextra"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/lytLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Username"
+                android:textColor="@color/green"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bg_etback">
+
+                <EditText
+                    android:imeOptions="actionDone"
+                    android:paddingHorizontal="10dp"
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    tools:text="annie"
+                    android:paddingVertical="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/gilroymedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="  Password"
+                android:textColor="@color/green"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/bg_etback">
+
+                <EditText
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lytLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_etback"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/gilroyextrabold"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="7dp"
+            android:text="Log in"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+        <ProgressBar
+            android:id="@+id/pd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/color_green"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

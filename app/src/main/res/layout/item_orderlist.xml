@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:elevation="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            app:cardCornerRadius="9dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/orderid"
+                        android:paddingVertical="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_tv_orderid"
+                        android:fontFamily="@font/gilroybold"
+                        android:gravity="center"
+                        android:paddingHorizontal="15dp"
+                        android:textSize="18sp"
+                        android:text="#VEGI09890"
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:id="@+id/tvtime"
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/gilroymedium"
+                         />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:padding="2dp"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/imgCustomer"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/bg_yellowring"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                         />
+
+                    <TextView
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/gilroybold"
+                        android:gravity="center"
+                        android:id="@+id/tvCustomername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/imgCustomer"
+                        tools:text="Jesica Robinson"
+                        android:textColor="@color/color_black"
+                        android:textSize="24sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".3dp"
+                        android:layout_below="@+id/imgCustomer"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginEnd="100dp"
+                        android:layout_marginRight="100dp"
+                        android:background="@color/gray_light" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_marginVertical="3dp"
+                        android:gravity="center"
+                        android:id="@+id/lytDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="-3dp"
+                            android:layout_marginLeft="-3dp"
+                            android:src="@drawable/ic_baseline_location_on_24" />
+
+                        <TextView
+                            android:id="@+id/tvdistence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gilroymedium"
+                            android:text="FFFF Km"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:fontFamily="@font/gilroymedium"
+                        android:textColor="@color/color_black"
+                        android:textSize="18sp"
+                        android:id="@+id/tvaddress1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lytDistance"
+                        tools:text="Mota varachha, SURAT" />
+
+                    <TextView
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/gilroymedium"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/tvaddress2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvaddress1"
+                        android:layout_toStartOf="@+id/imgarrow"
+                        android:layout_toLeftOf="@+id/imgarrow"
+                        android:textSize="15sp"
+                        tools:text="302, Green Plazza \nGolden Chowk" />
+
+                    <ImageView
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/imgarrow"
+                        android:layout_width="57dp"
+                        android:layout_height="57dp"
+                        android:padding="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bg_yellowbtn"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        app:tint="@color/color_black" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

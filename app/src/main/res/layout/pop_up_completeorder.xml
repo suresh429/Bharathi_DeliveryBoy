@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:minWidth="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/tvdeliverytype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/gilroymedium"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/color_black"
+                    android:textSize="28sp"
+                    tools:text="Cash on delivery!" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/popup_logo" />
+
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gilroymedium"
+                android:textColor="@color/color_black"
+                android:textSize="26sp"
+                tools:text="$350" />
+
+            <TextView
+                android:lineSpacingExtra="3dp"
+                android:id="@+id/tvDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/gilroymedium"
+                android:gravity="center"
+                android:textSize="16sp"
+                tools:text="cod" />
+
+            <TextView
+                android:id="@+id/tvPositive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@color/color_green"
+                android:fontFamily="@font/gilroymedium"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="10dp"
+                android:text="I Got Money"
+                android:textColor="#fff" />
+
+            <TextView
+                android:fontFamily="@font/gilroymedium"
+                android:id="@+id/tvCencel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="Cancel" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

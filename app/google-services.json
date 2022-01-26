@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "99177718071",
+    "project_id": "barathi-9bab8",
+    "storage_bucket": "barathi-9bab8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99177718071:android:8e17b8d04ca7a69b8afab2",
+        "android_client_info": {
+          "package_name": "com.barathi.captain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99177718071-sjj0q79tq1fs0ss69ju56v53lmsmotrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANNef7DNGvR9SJeo5FHkioilzLMlA4NLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99177718071-sjj0q79tq1fs0ss69ju56v53lmsmotrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

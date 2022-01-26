@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        tools:context=".activites.OrderDetailActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvCustomerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroybold"
+                    android:textColor="@color/color_black"
+                    android:textSize="26sp"
+                    tools:text="Jesica Robinson" />
+
+                <TextView
+                    android:id="@+id/tvOrderid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCustomerName"
+                    android:textColor="@color/color_black"
+                    android:textSize="14sp"
+                    tools:text="#FVGRT55678" />
+
+                <TextView
+                    android:id="@+id/tvprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="@font/gilroybold"
+                    android:textColor="@color/color_black"
+                    android:textSize="20sp"
+                    tools:text="$350" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentBottom="true">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="40dp"
+                tools:context=".activites.MainActivity" />
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/continerlyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                app:behavior_peekHeight="80dp"
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_bottom_sheet"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/offwhite"
+                        android:layout_marginHorizontal="20sp">
+
+                        <TextView
+                            android:id="@+id/tvorderid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="@font/gilroymedium"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:text="#VEGI090877"
+                            android:textColor="@color/color_black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvdeliverytype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toEndOf="@+id/tvorderid"
+                            android:layout_toRightOf="@+id/tvorderid"
+                            android:background="@color/color_orange"
+                            android:fontFamily="@font/gilroymedium"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:text="Cash on delivery"
+                            android:textColor="#fff"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:padding="3dp"
+                            android:id="@+id/arrowicon"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/bg_yellowbtn"
+                            android:rotation="-90"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            app:tint="@color/color_black" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:background="@color/offwhite"
+                    android:id="@+id/swiperefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_alignParentBottom="true" />
+                    <RelativeLayout
+                        android:background="@color/offwhite"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_above="@+id/cardview"
+                            android:layout_alignParentTop="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:id="@+id/lytmain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10dp"
+                                    android:orientation="vertical">
+
+
+                                    <RelativeLayout
+                                        android:layout_marginHorizontal="10dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:padding="3dp"
+                                            android:layout_width="80dp"
+                                            android:id="@+id/imgUser"
+                                            android:layout_height="80dp"
+                                            android:background="@drawable/bg_yellowring" />
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="20dp"
+                                            android:layout_marginLeft="20dp"
+                                            android:layout_toEndOf="@+id/imgUser"
+                                            android:layout_toRightOf="@+id/imgUser"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/tvName"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/gilroymedium"
+                                                tools:text="joseph Duo"
+                                                android:textColor="@color/color_black"
+                                                android:textSize="28sp" />
+
+                                            <TextView
+                                                android:textColor="@color/color_black"
+                                                android:id="@+id/tvaddress1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/lytDistance"
+                                                tools:text="Mota varachha, SURAT"
+                                                android:textSize="20sp" />
+
+                                            <TextView
+                                                android:textSize="16sp"
+                                                android:fontFamily="@font/gilroymedium"
+                                                android:id="@+id/tvaddress2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@id/tvaddress1"
+                                                tools:text="302, Green Plazza \nGolden Chowk" />
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="3dp"
+                                                android:gravity="center"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:layout_width="20dp"
+                                                    android:layout_height="20dp"
+                                                    android:background="@drawable/bg_yellowbtn"
+                                                    android:backgroundTint="@color/color_black"
+                                                    android:padding="3dp"
+                                                    android:src="@drawable/call"
+                                                    app:tint="@color/colorPrimary" />
+
+                                                <TextView
+                                                    android:id="@+id/tvMobile"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginLeft="5dp"
+                                                    android:drawablePadding="5dp"
+                                                    android:fontFamily="@font/gilroymedium"
+                                                    android:gravity="center"
+                                                    android:textSize="14sp"
+                                                    tools:text="+91 7890789079" />
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+
+                                    </RelativeLayout>
+
+                                    <View
+                                        android:alpha=".7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height=".3dp"
+                                        android:layout_below="@+id/imgUser"
+                                        android:layout_marginHorizontal="20dp"
+                                        android:layout_marginVertical="15dp"
+                                        android:background="@color/light_gray" />
+
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rvorderitems"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:nestedScrollingEnabled="true"
+                                        android:orientation="vertical"
+                                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                        </androidx.core.widget.NestedScrollView>
+
+                        <RelativeLayout
+                            android:layout_marginHorizontal="15dp"
+                            android:id="@+id/cardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:visibility="gone"
+                                    android:id="@+id/lytStart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingVertical="15dp">
+
+                                    <TextView
+                                        android:id="@+id/tvStart"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/bg_greenbtn"
+                                        android:backgroundTint="@color/color_black"
+                                        android:fontFamily="@font/gilroybold"
+                                        android:gravity="center"
+                                        android:paddingHorizontal="50dp"
+                                        android:paddingVertical="10dp"
+                                        android:text="Start"
+                                        android:textColor="#fff"
+                                        android:textSize="16sp"
+                                        android:visibility="visible" />
+                                </RelativeLayout>
+
+
+                                <LinearLayout
+                                    android:elevation="5dp"
+                                    android:id="@+id/lytCompleteHold"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_gredent"
+                                    android:orientation="horizontal"
+                                    android:paddingVertical="15dp"
+                                    android:visibility="visible"
+                                    android:weightSum="2">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/tvComplete"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginHorizontal="15dp"
+                                            android:background="@drawable/bg_greenbtn"
+                                            android:fontFamily="@font/gilroybold"
+                                            android:gravity="center"
+                                            android:paddingVertical="10dp"
+                                            android:text="Complete"
+                                            android:textColor="#fff"
+                                            android:textSize="16sp" />
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <TextView
+                                            android:id="@+id/tvHold"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginHorizontal="15dp"
+                                            android:background="@drawable/bg_orangebtn"
+                                            android:fontFamily="@font/gilroybold"
+                                            android:gravity="center"
+                                            android:paddingVertical="10dp"
+                                            android:text="Hold"
+                                            android:textColor="#fff"
+                                            android:textSize="16sp" />
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <ProgressBar
+            android:id="@+id/pd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/color_green"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>
