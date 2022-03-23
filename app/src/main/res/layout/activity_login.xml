@@ -17,15 +17,16 @@
             android:layout_height="190dp"
             android:layout_alignParentBottom="true"
             android:scaleType="fitCenter"
+            android:visibility="gone"
             android:src="@drawable/splash_tomato" />
 
         <ImageView
             android:id="@+id/tvvegi"
             android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="70dp"
-            android:src="@drawable/captain_logo" />
+            android:src="@drawable/logo_app_png" />
 
         <TextView
             android:id="@+id/tvextra"
@@ -109,7 +110,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
             android:background="@drawable/bg_etback"
-            android:backgroundTint="@color/green"
+            android:backgroundTint="@color/colorAccent"
             android:fontFamily="@font/gilroyextrabold"
             android:paddingHorizontal="30dp"
             android:paddingVertical="7dp"

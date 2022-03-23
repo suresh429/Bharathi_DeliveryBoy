@@ -24,13 +24,26 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorPrimary">
 
-                <ImageView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/app_name"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/gilroymedium"
+                    android:padding="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp" />
+                <!--<ImageView
                     android:layout_width="150dp"
                     android:layout_height="65dp"
-                    android:paddingTop="6dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/captain_logo" />
+                    android:paddingTop="6dp"
+                    android:src="@drawable/captain_logo" />-->
             </RelativeLayout>
         </com.google.android.material.appbar.AppBarLayout>
 

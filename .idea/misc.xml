@@ -3,6 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/drawable-v24/bg_etback.xml" value="0.116" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/drawable/bg_bottom_sheet.xml" value="0.19166666666666668" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/drawable/bg_yellowring.xml" value="0.116" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/activity_map_test.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/activity_order_detail.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/bottom_sheet_editprofile.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/bottom_sheetconfirmation.xml" value="0.1" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/bottom_sheetorderdetail.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/custom_marker_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/dummy.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/fragment_complete.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/fragment_pending.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/fragment_profile.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/item_orderlist.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/item_products.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/pop_up_completeorder.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/layout/pop_up_holdorder.xml" value="0.17552083333333332" />
+        <entry key="..\:/Android projects/Bharathi/Bharathi_DeliveryBoy/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.116" />
         <entry key="..\:/Downloads/Vegi/Vegi/DeliveryBoy/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
         <entry key="..\:/Downloads/Vegi/Vegi/DeliveryBoy/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>

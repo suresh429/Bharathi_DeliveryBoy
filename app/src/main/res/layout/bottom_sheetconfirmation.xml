@@ -57,7 +57,7 @@
                 android:fontFamily="@font/gilroymedium"
                 android:gravity="center"
                 android:text="Yes"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorAccent"
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
